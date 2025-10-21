@@ -32,5 +32,5 @@ jobs:
         run: pnpm install
       
       - name: Run lint
-        run: echo "Linting would run here."
+        run: echo "Linting would run here"
 
