@@ -1,0 +1,11 @@
+{
+  extends: ["github>cybozu/renovate-config", ":prConcurrentLimitNone"],
+  enabledManagers: ["github-actions"],
+  packageRules: [
+    {
+      description: "Disable automerge for all GitHub Actions updates (require manual review)",
+      matchManagers: ["github-actions"],
+      automerge: false,
+    },
+  ],
+}
